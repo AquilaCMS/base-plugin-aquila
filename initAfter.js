@@ -1,9 +1,12 @@
-const {Shortcodes} = require('../../orm/models');
+//ShortCode Extension
+//const {Shortcodes} = require('../../orm/models');
 
 // eslint-disable-next-line no-unused-vars
 module.exports = async function (resolve, reject, server, app, passport) {
     try {
         require('./routes/base-plugin-aquila')(app);
+        
+        /* ShortCode Extension
         const shortCodes = {
             weight      : 100,
             tag         : 'base-plugin',
@@ -33,13 +36,14 @@ module.exports = async function (resolve, reject, server, app, passport) {
             }
         };
 
-        // Les lignes suivantes sont à dé-commenter pour créer le shortcode
+        try {
+            await Shortcodes.updateOne({tag: shortCodes.tag}, {$set: shortCodes}, {upsert: true});
+        } catch (err) {
+            console.error('base-plugin-aquila :', err);
+        }
 
-        // try {
-        //     await Shortcodes.updateOne({tag: shortCodes.tag}, {$set: shortCodes}, {upsert: true});
-        // } catch (err) {
-        //     console.error('base-plugin-aquila -', err);
-        // }
+        */
+
         resolve();
     } catch (err) {
         reject(err);
