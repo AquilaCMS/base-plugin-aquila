@@ -10,6 +10,9 @@
             "theme": {},
             "api": {}
         },
-        "moduleDependencies": []
+        "moduleDependencies": [],
+        "mailTypeCode": ["birthdayMail"],
+        "cronNames": ["sendBirthdayCoupons"],
+        "promoNames": ["Birthday"]
     }
 }

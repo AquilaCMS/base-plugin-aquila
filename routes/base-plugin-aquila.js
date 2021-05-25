@@ -1,23 +1,19 @@
 const ServicePlugin = require('../services/baseServices');
+//const {setConfig, getConfig} = require('../../../services/modules');
 
 module.exports = function (app) {
     app
-        .get('/v2/nameToIdentifyTheplugin/:slug', getFunction)
-        .get('/v2/nameToIdentifyTheplugin/config', getConfig)
-        .post('/v2/nameToIdentifyTheplugin/test', postFunction);
+        .post('v2/modules/saveConfig')
+        //.post('/v2/base-plugin-aquila/sendBirthdayMails', sendBirthdayMails)
 };
 
-function getFunction(req, res) {
-    // on return les params du GET
-    return res.json(req.params);
-}
 
-function postFunction(req, res) {
-    // on return le body du POST
-    return res.json(req.body);
-}
-
-function getConfig(req, res) {
-    // on return le body du POST
-    return res.json(ServicePlugin.getPluginInfos());
-}
+//INUTILE
+/*async function sendBirthdayMails(req,res,next){
+    try{
+        console.log('HEY');
+    }
+    catch(err){
+        next(err);
+    }
+};*/
