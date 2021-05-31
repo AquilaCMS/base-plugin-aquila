@@ -1,3 +1,4 @@
+const {info} = require('./info.json');
 //const {Shortcodes} = require('../../orm/models');
 
 /**
@@ -8,7 +9,7 @@ module.exports = async function (resolve, reject) {
         //await Shortcodes.deleteOne({tag: 'base-plugin'});
         return resolve();
     } catch (error) {
-        console.error('base-plugin-aquila : ', error);
+        console.error(`${info.name} : `, error);
         return reject(error);
     }
 };
