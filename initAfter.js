@@ -1,11 +1,11 @@
-const {info} = require('./info.json');
+const { info } = require("./info.json");
 //const {Shortcodes} = require('../../orm/models'); //ShortCode Extension
 
 // eslint-disable-next-line no-unused-vars
 module.exports = async function (resolve, reject, server, app, passport) {
     try {
-        require('./routes/base-plugin-aquila')(app);
-        
+        require("./routes/base-plugin-aquila")(app);
+
         /* ShortCode Extension
         const shortCodes = {
             weight      : 100,

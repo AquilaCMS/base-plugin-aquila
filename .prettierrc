@@ -1,0 +1,16 @@
+{
+    "enableDebugLogs": true,
+    "enable": true,
+    "printWidth": 132,
+    "trailingComma": "none",
+    "requireConfig": true,
+    "tabWidth": 4,
+    "overrides": [
+        {
+            "files": "*.html",
+            "options": {
+                "printWidth": 250
+            }
+        }
+    ]
+}

@@ -1,16 +1,15 @@
-var basePlugin = {name: 'aq.base-plugin-aquila'};
+var basePlugin = { name: "aq.base-plugin-aquila" };
 
 angular.module(`${basePlugin.name}`, [
     `${basePlugin.name}.controllers`,
     `${basePlugin.name}.routes`,
-    `${basePlugin.name}.services`//,
+    `${basePlugin.name}.services`
     //`${basePlugin.name}.directives`
 ]);
 // uncommented to use a decorator.
 //Note that you need to have setup the service
 
-
-angular.module('aq.dependencies').requires.push(`${basePlugin.name}`);
+angular.module("aq.dependencies").requires.push(`${basePlugin.name}`);
 
 /*
 angular.module('adminCatagenApp').config(['$provide', function ($provide) {

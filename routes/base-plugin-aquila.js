@@ -1,13 +1,12 @@
-const {authentication, adminAuth } = require('../../../middleware/authentication');
-const {info} = require('../info.json');
-const ServicePlugin = require('../services/baseServices');
+const { authentication, adminAuth } = require("../../../middleware/authentication");
+const { info } = require("../info.json");
+const ServicePlugin = require("../services/baseServices");
 
 module.exports = function (app) {
-    app
-        .get(`/v2/${info.name}/:slug`, getFunction)
+    app.get(`/v2/${info.name}/:slug`, getFunction)
         .get(`/v2/${info.name}/config`, getConfig)
         .post(`/v2/${info.name}/test`, postFunction)
-        .post(`/v2/${info.name}/protectedTest`, authentication, adminAuth, postFunction) // this route is protected
+        .post(`/v2/${info.name}/protectedTest`, authentication, adminAuth, postFunction); // this route is protected
 };
 
 function getFunction(req, res) {
