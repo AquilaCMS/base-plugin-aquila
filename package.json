@@ -4,7 +4,7 @@
   "description": "Boilerplate code used to create a plugin for [AquilaCMS](https://www.aquila-cms.com).",
   "main": "init.js",
   "scripts": {
-    "lint": "eslint"
+    "lint:check": "eslint"
   },
   "repository": {
     "type": "git",
