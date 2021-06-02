@@ -1,5 +1,5 @@
 const { info } = require("./info.json");
-//const {Shortcodes} = require('../../orm/models'); //ShortCode Extension
+// const {Shortcodes} = require('../../orm/models'); //ShortCode Extension
 
 // eslint-disable-next-line no-unused-vars
 module.exports = async function (resolve, reject, server, app, passport) {

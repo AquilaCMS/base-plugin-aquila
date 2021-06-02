@@ -1,5 +1,5 @@
 const { info } = require("./info.json");
-//const {Shortcodes} = require('../../orm/models');
+// const {Shortcodes} = require('../../orm/models');
 
 /**
  * This function is called when the plugin is desactivated or when we delete it
