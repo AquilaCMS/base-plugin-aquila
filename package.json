@@ -2,9 +2,8 @@
   "name": "base-plugin-aquila",
   "version": "1.0.0",
   "description": "Boilerplate code used to create a plugin for [AquilaCMS](https://www.aquila-cms.com).",
-  "main": "init.js",
   "scripts": {
-    "lint:check": "eslint"
+    "lint:check": "eslint --ext js,jsx ."
   },
   "repository": {
     "type": "git",
