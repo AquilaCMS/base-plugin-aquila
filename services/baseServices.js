@@ -1,5 +1,7 @@
+/* eslint-disable */
 const {info}       = require('../info.json');
 const aquilaEvents = require('../../../utils/aquilaEvents');
+/* eslint-enable */
 
 const getPluginInfos = () => info;
 

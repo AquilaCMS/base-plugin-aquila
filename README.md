@@ -13,3 +13,9 @@ npm install
 ## Linter info
 
 Issues will appear in 'output' and will be underlined in red in your code.
+
+To use it, do
+
+```sh
+npm run lint:check
+```
