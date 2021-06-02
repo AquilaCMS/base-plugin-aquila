@@ -1,7 +1,5 @@
 const infos = require('../info.json');
 
-const getPluginInfos = function() {
-    return infos.info;
-};
+const getPluginInfos = () => infos.info;
 
 module.exports = {getPluginInfos};

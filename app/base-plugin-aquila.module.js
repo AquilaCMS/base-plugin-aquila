@@ -1,14 +1,13 @@
-var basePlugin = {name: 'aq.base-plugin-aquila'};
+const basePlugin = {name: 'aq.base-plugin-aquila'};
 
 angular.module(`${basePlugin.name}`, [
     `${basePlugin.name}.controllers`,
     `${basePlugin.name}.routes`,
-    `${basePlugin.name}.services`//,
-    //`${basePlugin.name}.directives`
+    `${basePlugin.name}.services`// ,
+    // `${basePlugin.name}.directives`
 ]);
 // uncommented to use a decorator.
-//Note that you need to have setup the service
-
+// Note that you need to have setup the service
 
 angular.module('aq.dependencies').requires.push(`${basePlugin.name}`);
 
