@@ -4,9 +4,12 @@ Boilerplate code used to create a plugin for [AquilaCMS](https://www.aquila-cms.
 
 You can find official documentation [here](https://doc.aquila-cms.com/#/Creating/Plugin/Plugin_Base?id=top)
 
-### Linter info ###
+## Start dev
 
-A linter is now available. Run the following command in your terminal to enable it : 'npm run lint:check -c .eslintrc'.
+```sh
+npm install
+```
+
+## Linter info
+
 Issues will appear in 'output' and will be underlined in red in your code.
-You may need to restart VSCode for the linter to take effect. 
-If you are modifying the plugin while it's in AquilaCMS, you may remove the 'node_modules', 'package', and 'package-lock' files.
