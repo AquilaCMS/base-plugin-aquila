@@ -46,7 +46,7 @@ module.exports = async function (resolve, reject, server, app, passport) {
 
         resolve();
     } catch (err) {
-        console.error(`${info.name} : `, error);
+        console.error(`${info.name} : `, err);
         reject(err);
     }
 };

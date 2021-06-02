@@ -6,7 +6,7 @@ const { info } = require("./info.json");
  */
 module.exports = async function (resolve, reject) {
     try {
-        //await Shortcodes.deleteOne({tag: 'base-plugin'});
+        // await Shortcodes.deleteOne({tag: 'base-plugin'});
         return resolve();
     } catch (error) {
         console.error(`${info.name} : `, error);
