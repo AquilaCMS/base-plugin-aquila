@@ -17,5 +17,9 @@ Issues will appear in 'output' and will be underlined in red in your code.
 To use it, do
 
 ```sh
-npm run lint:check
+npm run -s lint:check
 ```
+
+> Lengend :
+>
+> - `-s` is for silent npm
