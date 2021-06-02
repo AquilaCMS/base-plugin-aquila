@@ -6,4 +6,6 @@ You can find official documentation [here](https://doc.aquila-cms.com/#/Creating
 
 ### Linter info ###
 
-A linter is now available. Run the following command in your terminal to enable it : 'npm run lint:check'.
+A linter is now available. Run the following command in your terminal to enable it : 'npm run lint -c .eslintrc'.
+Issues will appear in 'output' and will be underlined in red in your code.
+You may need to restart VSCode for the linter to take effect.
