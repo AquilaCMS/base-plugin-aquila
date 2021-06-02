@@ -1,7 +1,9 @@
+/* eslint-disable */
 const { info } = require("../info.json");
 const aquilaEvents = require("../../../utils/aquilaEvents");
-const { getConfig, setConfig } = require("../../../services/modules");
+/* eslint-enable */
 
+// eslint-disable-next-line
 const getPluginInfos = function () {
     return info;
 };

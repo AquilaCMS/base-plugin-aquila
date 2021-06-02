@@ -1,6 +1,8 @@
+/* eslint-disable */
 const { authentication, adminAuth } = require("../../../middleware/authentication");
 const { info } = require("../info.json");
 const ServicePlugin = require("../services/baseServices");
+/* eslint-enable */
 
 module.exports = function (app) {
     app.get(`/v2/${info.name}/:slug`, getFunction)

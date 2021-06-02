@@ -4,6 +4,18 @@ Boilerplate code used to create a plugin for [AquilaCMS](https://www.aquila-cms.
 
 You can find official documentation [here](https://doc.aquila-cms.com/#/Creating/Plugin/Plugin_Base?id=top)
 
-### Linter info ###
+## Start dev
 
-A linter is now available. Run the following command in your terminal to enable it : 'npm run lint:check'.
+```sh
+npm install
+```
+
+## Linter info
+
+Issues will appear in 'output' and will be underlined in red in your code.
+
+To use it, do
+
+```sh
+npm run lint:check
+```

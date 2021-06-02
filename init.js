@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 const aquilaEvents = require("../../utils/aquilaEvents");
 
 module.exports = function () {
