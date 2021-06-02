@@ -1,14 +1,15 @@
-const {Shortcodes} = require('../../orm/models');
+const {info} = require('./info.json');
+// const {Shortcodes} = require('../../orm/models');
 
 /**
- * Cette fonction est appelée lors de la desactivation d'un module et lors de la suppression d'un module
+ * This function is called when the plugin is desactivated or when we delete it
  */
 module.exports = async function (resolve, reject) {
     try {
-        await Shortcodes.deleteOne({tag: 'base-plugin'});
+        // await Shortcodes.deleteOne({tag: 'base-plugin'});
         return resolve();
     } catch (error) {
-        console.error('base-plugin-aquila : ', error);
+        console.error(`${info.name} : `, error);
         return reject(error);
     }
 };
