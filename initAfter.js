@@ -1,10 +1,12 @@
 const {info} = require('./info.json');
-// const {Shortcodes} = require('../../orm/models'); //ShortCode Extension
+// ShortCode Extension
+// const {Shortcodes} = require('../../orm/models');
 
-// eslint-disable-next-line no-unused-vars
+// eslint-disable-next-line no-unused-vars, max-params, require-await
 module.exports = async function (resolve, reject, server, app, passport) {
     try {
         require('./routes/base-plugin-aquila')(app);
+
         /* ShortCode Extension
         const shortCodes = {
             weight      : 100,
@@ -45,7 +47,7 @@ module.exports = async function (resolve, reject, server, app, passport) {
 
         resolve();
     } catch (err) {
-        console.error(`${info.name} : `, err);
+        console.error(`${info.name} -> initAfter.js :`, err);
         reject(err);
     }
 };
