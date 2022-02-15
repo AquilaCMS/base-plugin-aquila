@@ -1,5 +1,5 @@
 // eslint-disable-next-line
-const aquilaEvents = require('../../utils/aquilaEvents');
+const {aquilaEvents} = require('aql-utils');
 
 module.exports = function () {
     // if you want to add an hook binded on an AquilaEvent
