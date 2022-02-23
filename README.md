@@ -2,7 +2,7 @@
 
 Boilerplate code used to create a plugin for [AquilaCMS](https://www.aquila-cms.com).
 
-You can find official documentation [here](https://doc.aquila-cms.com/#/Creating/Plugin/Plugin_Base?id=top)
+You can find official documentation [here](https://doc.aquila-cms.com/#/Creating/Plugin/Plugin-Files?id=top)
 
 ## Start dev
 
