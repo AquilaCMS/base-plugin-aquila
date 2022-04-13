@@ -10,7 +10,7 @@
     "url": "git+https://github.com/AquilaCMS/base-plugin-aquila.git"
   },
   "author": "AquilaCMS",
-  "license": "ISC",
+  "license": "OSL-3.0",
   "bugs": {
     "url": "https://github.com/AquilaCMS/base-plugin-aquila/issues"
   },

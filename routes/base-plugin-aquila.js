@@ -6,23 +6,35 @@ const ServicePlugin               = require('../services/baseServices');
 
 module.exports = function (app) {
     app
-        .get(`/v2/${info.name}/:slug`, getFunction)
-        .get(`/v2/${info.name}/config`, getConfig)
-        .post(`/v2/${info.name}/test`, postFunction)
-        .post(`/v2/${info.name}/protectedTest`, authentication, adminAuth, postFunction); // this route is protected
+        .get(`/${info.name}/:slug`, getFunction)
+        .get(`/${info.name}/config`, getConfig)
+        .post(`/${info.name}/test`, postFunction)
+        .post(`/${info.name}/protectedTest`, authentication, adminAuth, postFunction); // this route is protected
 };
 
 function getFunction(req, res) {
     // on return les params du GET
-    return res.json(req.params);
+    try {
+        return res.json(req.params);
+    } catch(err){
+        next(err);
+    }
 }
 
 function postFunction(req, res) {
     // on return le body du POST
-    return res.json(req.body);
+    try {
+        return res.json(req.body);
+    } catch(err){
+        next(err);
+    }
 }
 
 function getConfig(req, res) {
     // on return le body du POST
-    return res.json(ServicePlugin.getPluginInfos());
+    try {
+        return res.json(ServicePlugin.getPluginInfos());
+    } catch(err){
+        next(err);
+    }
 }
