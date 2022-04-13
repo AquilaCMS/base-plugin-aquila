@@ -2,7 +2,7 @@
     "info": {
         "name": "base-plugin-aquila",
         "description": "Base d'un plugin aquila",
-        "version": "1.0.0a",
+        "version": "1.0.0",
         "loadApp": true,
         "url": "base-plugin-config",
         "files": [],
