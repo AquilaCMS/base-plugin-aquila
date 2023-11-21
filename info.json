@@ -1,15 +1,10 @@
 {
     "info": {
         "name": "base-plugin-aquila",
-        "description": "Base d'un plugin aquila",
-        "version": "1.0.0a",
+        "description": "Boilerplate code used to create a plugin for [AquilaCMS](https://www.aquila-cms.com).",
         "loadApp": true,
         "url": "base-plugin-config",
         "files": [],
-        "packageDependencies": {
-            "theme": {},
-            "api": {}
-        },
         "moduleDependencies": []
     }
 }
